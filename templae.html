@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>Simple web Development Template</title>
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+ 
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+ 
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+ 
+        .firstsection {
+            background-color: rgb(53, 176, 217);
+            height: 400px;
+        }
+ 
+        .secondsection {
+            background-color: rgba(0, 0, 255, 0.199);
+            height: 400px;
+        }
+ 
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+ 
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf {
+            width: 30%;
+        }
+ 
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+ 
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+ 
+        .text-small {
+            font-size: 18px;
+        }
+ 
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+ 
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+ 
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+ 
+        .paras {
+            padding: 0px 65px;
+        }
+ 
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+ 
+        .center {
+            text-align: center;
+        }
+ 
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+ 
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "D:\SEM-3\WEB APPLICATION PROGRAMMING PART-1\logo.png">
+            </div>
+            <li><a href="#web">Cricketers</a></li>
+            <li><a href="#program">Footballers</a></li>
+            <li><a href="#course">Wreslers</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web"> # Virat Kohli: </h1>
+                <img src="D:\SEM-3\WEB APPLICATION PROGRAMMING PART-1\kohli.jpg" width="20%" height="20%" alt="Virat Kohli Image">
+                <p class="text-small">
+                    Virat Kohli is the leader of the Indian cricket match group who is known as the Run Machine & King Kohli in international level cricket Match.
+                    He is a stylish batsman who normally bats on 1st down in the Indian cricket team match.
+                    He is often referred to as King Kohli by his fans who love his aggressive batting style and ability to score truck loads of runs.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">
+                    # Sunil Chetri: 
+                </h1>
+                <image src="D:\SEM-3\WEB APPLICATION PROGRAMMING PART-1\Sunil.png" width="20%" height="20%" alt="Sunil Chetri Image"></image>
+                
+                
+                <p class="text-small">
+                    Chhetri's opener was also his 24th goal at the SAFF Championship, making him the all-time leading goalscorer of the celebrated tournament.
+                    Chhetri has surpassed Ali Ashfaq to become the all-time goal-getter in the history of the SAFF Championship.
+                    The Indian captain is closing in on Lionel Messi (103) and Cristiano Ronaldo (123) on the list of all-time international goal scorers in men’s football. 
+                    Chhetri is only behind Ronaldo, Messi and Ali Daei (109) on the elite list. The star striker has scored seven goals in his last seven appearances for Team India. 
+                    The 38-year-old managed to find the back of the net in India's comfortable win over Nepal.  
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big"> # The Great Khali: </h1>
+            <img src="D:\SEM-3\WEB APPLICATION PROGRAMMING PART-1\khali.jpeg" width="20%" height="20%" alt="Khali Image">
+                
+            <p class="sectionSubTag text-small">
+            Dalip Singh Rana (born 27 August 1972) is a retired Indian professional wrestler and wrestling promoter better known by his ring name The Great Khali.
+            He is best known for his tenure in WWE where he became the first Indian-born World Heavyweight Champion in history.
+            Dalip Singh's famous achievements in WWE made him a national hero in India.
+            In a country where cricket is the most popular sport, he created a sensation after he won the World Heavyweight Championship in 2007 and, became one of the most famous athletes and a legend in India
+            </p>
+ 
+ 
+        </div>
+ 
+        <div class="thumbnail">
+            <img src= "img.png" alt="laptop image">
+        </div>
+    </section>
+ 
+    <footer class="background">
+        <p class="text-foo   ter">
+            
+            
+        </p>
+ 
+ 
+    </footer>
+</body>
+ 
+</html>
